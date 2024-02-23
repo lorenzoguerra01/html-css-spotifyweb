@@ -113,6 +113,8 @@ main {
     top: 0;
     right: 0;
     padding: 20px;
+    font-size: smaller;
+    font-weight: 700;
 }
 
 .nav {
@@ -149,7 +151,7 @@ main {
 /* utility  */
 .btn {
     display: inline-block;
-    padding: 6px 12px;
+    padding: 12px 36px;
     border: 1px solid var(--color-white);
     border-radius: 20px;
 }
