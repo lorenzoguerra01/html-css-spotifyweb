@@ -1,0 +1,29 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+.debug {
+    border: 1px solid red;
+}
+/* general */
+:root {
+}
+html {
+    scroll-behavior: smooth;
+}
+/* header  */
+
+/* main  */
+
+/* footer  */
+
+/* utility  */
+ 
+/* flex utility  */
+
+/* media query  */
