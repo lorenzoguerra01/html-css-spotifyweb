@@ -25,21 +25,22 @@
                 <div>
                     <!-- div container first list  -->
                     <div>
-                        <img src="img/logo.svg" alt="logo">
+                        <img class="display-hide" src="img/logo.svg" alt="logo">
+                        <img class="hide-display" src="img/logo-small.svg" alt="logo-small">
                     </div>
                     <div>
                         <ul>
                             <li class="green-left">
                                 <img src="img/home.svg" alt="home">
-                                <span>Home</span>
+                                <span><a href="#">Home</a></span>
                             </li>
                             <li>
                                 <img src="img/search.svg" alt="search">
-                                <span>Cerca</span>
+                                <span><a href="#">Cerca</a></span>
                             </li>
                             <li>
                                 <img src="img/libreria.svg" alt="library">
-                                <span>La tua libreria</span>
+                                <span><a href="#">La tua libreria</a></span>
                             </li>
                         </ul>
                         <ul>
@@ -47,16 +48,18 @@
                                 <h3>PLAYLIST</h3>
                             </li>
                             <li>
-                                <i class="fa-solid fa-square-plus light-grey"></i>
-                                <span>Crea Playlist</span>
+                                <a class="d-flex align-center" href="#">
+                                    <i class="fa-solid fa-square-plus"></i>
+                                    <span>Crea Playlist</span>
+                                </a>
                             </li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
                         </ul>
                     </div>
                 </div>
@@ -65,7 +68,7 @@
                     <ul>
                         <li>
                             <img src="img/download.svg" alt="download">
-                            <span>Installa App</span>
+                            <span><a href="#">Installa App</a></span>
                         </li>
                         <li class="hr">
                             <!-- ##### horizontal rule #####  -->
@@ -81,12 +84,12 @@
             <main>
                 <!-- div header  -->
                 <div class="header d-flex align-center justify-flex-end">
-                    <div class="btn"><a href="#">EFFETTUA L'UPGRADE</a></div>
+                    <div><a href="#">EFFETTUA L'UPGRADE</a></div>
                 </div>
                 <!-- div nav list  -->
                 <div class="nav">
-                    <ul class="d-flex justify-between">
-                        <li><a href="#">IN EVIDENZA</a></li>
+                    <ul class="d-flex justify-between wrap">
+                        <li class="relative"><a class="green-bottom" href="#">IN EVIDENZA</a></li>
                         <li><a href="#">PODCAST</a></li>
                         <li><a href="#">CLASSIFICHE</a></li>
                         <li><a href="#">GENERI E MOOD</a></li>
@@ -98,33 +101,33 @@
                 <div>
                     <h2>Recently played</h2>
                     <!-- cards  -->
-                    <div class="d-flex">
-                        <ul>
+                    <div class="d-flex gap wrap">
+                        <ul class="card text-center">
                             <li><img src="img/metal_lifting.jpg" alt="heavy-metal"></li>
                             <li>Heavy Metal</li>
                             <li>Subtitle</li>
                         </ul>
-                        <ul>
+                        <ul class="card text-center">
                             <li><img src="img/stranger.jpeg" alt="stranger-things"></li>
                             <li>Stranger Things, Vol. 1 a Netflix Original Series Soundtrack)</li>
                             <li>Kyle Dixon & Michael Stein</li>
                         </ul>
-                        <ul>
+                        <ul class="card text-center">
                             <li><img src="img/aquietplace.jpeg" alt="quite-place"></li>
                             <li>A quiet place</li>
                             <li>Subtitle</li>
                         </ul>
-                        <ul>
+                        <ul class="card text-center">
                             <li><img src="img/split.jpeg" alt="split"></li>
                             <li>Split</li>
                             <li>Subtitle</li>
                         </ul>
-                        <ul>
+                        <ul class="card text-center">
                             <li><img src="img/cure.jpeg" alt="cure-for-wellness"></li>
                             <li>A cure for wellness</li>
                             <li>Subtitle</li>
                         </ul>
-                        <ul>
+                        <ul class="card text-center">
                             <li><img src="img/sinister.jpeg" alt="sinister"></li>
                             <li>Sinister</li>
                             <li>Subtitle</li>
@@ -135,12 +138,12 @@
                         <h2>Creato per Jhon Doe</h2>
                         <div>Più ascolti, più accurati saranno i suggerimenti.</div>
                         <!-- cards  -->
-                        <div class="d-flex">
-                            <ul>
+                        <div class="d-flex gap">
+                            <ul class="card text-center">
                                 <li><img src="img/radar.jpeg" alt="release-radar"></li>
                                 <li>Release Radar</li>
                             </ul>
-                            <ul>
+                            <ul class="card text-center">
                                 <li><img src="img/mixdaily.jpeg" alt="daily-mix-1"></li>
                                 <li>Daily Mix 1</li>
                             </ul>
@@ -151,13 +154,13 @@
                         <h2>Artisti più popolari</h2>
                         <div>Più ascolti, più accurati saranno i suggerimenti.</div>
                         <!-- cards  -->
-                        <div class="d-flex">
-                            <ul>
-                                <li><img src="img/youg.jpeg" alt="youg"></li>
+                        <div class="d-flex gap">
+                            <ul class="card text-center">
+                                <li class="round"><img src="img/youg.jpeg" alt="youg"></li>
                                 <li>Youg</li>
                             </ul>
-                            <ul>
-                                <li><img src="img/einaudi.jpeg" alt="einaudi"></li>
+                            <ul class="card text-center">
+                                <li class="round"><img src="img/einaudi.jpeg" alt="einaudi"></li>
                                 <li>Einaudi</li>
                             </ul>
                         </div>
@@ -167,43 +170,39 @@
         </div>
 
         <!-- ***TOOLBAR***  -->
-        <div id="toolbar" class="d-flex justify-between">
-            <div class="d-flex">
-                <ul class="d-flex">
-                    <li><img src="img/sinister.jpeg" alt="small-sinister"></li>
-                    <li>
-                        <div>Sinister</div>
-                        <div>Brano Nome</div>
-                    </li>
-                </ul>
-                <ul class="d-flex">
-                    <li><i class="fa-regular fa-heart"></i></li>
-                    <li><i class="fa-regular fa-folder"></i></li>
-                </ul>
+        <div id="toolbar" class="d-flex align-center">
+            <div class="d-flex align-center card gap">
+                <img src="img/sinister.jpeg" alt="small-sinister">
+                <div>
+                    <div class="x-small weight-700">Sinister</div>
+                    <div class="xx-small weight-700 grey"><a class="underline" href="#">Brano Nome</a></div>
+                </div>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="#"><i class="fa-regular fa-folder"></i></a>
             </div>
-            <div class="d-flex">
-                <ul class="d-flex">
+            <div class="d-flex card align-center column">
+                <ul class="d-flex gap">
                     <li><i class="fa-solid fa-shuffle"></i></li>
                     <li><i class="fa-solid fa-backward-step"></i></li>
                     <li><i class="fa-regular fa-circle-play"></i></li>
                     <li><i class="fa-solid fa-forward-step"></i></li>
                     <li><i class="fa-solid fa-arrow-rotate-right"></i></li>
                 </ul>
-                <ul class="d-flex">
-                    <li>0:25</li>
-                    <li>
-                        <!-- ### FAI LA BARRA DI RIPRODUZIONE ### -->
+                <ul class="d-flex align-center full-width gap">
+                    <li class="xx-small weight-700">0:25</li>
+                    <li class="song-progress">
+                        <div class="progress-fill"></div>
                     </li>
-                    <li>4:35</li>
+                    <li class="xx-small weight-700">4:35</li>
                 </ul>
             </div>
-            <div>
-                <ul class="d-flex">
+            <div class="card ">
+                <ul class="d-flex align-center justify-flex-end gap">
                     <li><i class="fa-solid fa-list-ul"></i></li>
                     <li><i class="fa-solid fa-display"></i></li>
                     <li><i class="fa-solid fa-volume-high"></i></li>
-                    <li>
-                        <!-- ### FAI LA MINI BARRA DI RIPRODUZIONE ### -->
+                    <li class="song-progress-small">
+                        <div class="progress-fill"></div>
                     </li>
                 </ul>
             </div>
